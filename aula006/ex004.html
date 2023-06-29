@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="../favicon circuito eletronico 01.jpeg" type="image/x-icon">
     <title>Document</title>
     <style>
-        body, html {
+        body, html , script {
             background-color: black;
             background-image: url("../fundo javascript03.jpeg");
             background-attachment: fixed;
@@ -22,11 +22,11 @@
 
     <script>
         var nome = window.prompt('Qual é o seu nome? ');
-        var output = document.createElement () ;
-        
-        output.innerHTML += `Olá, ${nome} Seu nome tem ${nome.length} letras, <br>`;
-        output.innerHTML += `seu nome em letra maiúscula é ${nome.toLocaleUpperCase()} <br>`;
-        output.innerHTML += `Seu nome em minúscula é ${nome.toLowerCase()} <br>`;
+        var output = document.createElement('p');
+
+        output.innerHTML += `Olá, ${nome}. Seu nome tem ${nome.length} letras.<br>`;
+        output.innerHTML += `Seu nome em letra maiúscula é ${nome.toLocaleUpperCase()}.<br>`;
+        output.innerHTML += `Seu nome em minúscula é ${nome.toLowerCase()}.<br>`;
 
         document.body.appendChild(output);
     </script> 
