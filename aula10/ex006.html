@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon circuito eletronico 01.jpeg" type="image/x-icon">
+    <title>Evetos DOM</title>
+    <style> 
+    body {
+        background-color: black;
+        background-image: url(../fundo\ javascript03.jpeg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    div#area {
+        background-color: darkblue;
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        text-align: center;
+        border-radius: 50% ;
+
+    }
+    
+    </style>
+
+</head>
+<body>
+    <h1>Usando o DOM</h1>
+
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener ('click', clicar)
+        a.addEventListener ('mouseenter', entrar)
+        a.addEventListener ('mouseout', sair)
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background= 'black'
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+            a.style.backgroundColor='purple'
+        }
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background= 'darkblue'
+        }
+    </script>
+    
+</body>
+</html>
